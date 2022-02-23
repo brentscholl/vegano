@@ -1,0 +1,76 @@
+.featured-meal-item-container {
+    .full-width();
+    padding: 0 @baseline*2;
+
+    .featured-meal-item-link:hover {
+        text-decoration: none;
+
+        img {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        h3 {
+            color: @accent-color;
+        }
+    }
+
+    img {
+        .full-width();
+        .transition();
+    }
+
+    .featured-meal-item-header {
+        .full-width();
+        min-height: 100px;
+        .flex-column();
+        background: transparent;
+        padding: @baseline 0px;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 0px;
+            .transition();
+        }
+    }
+
+    .featured-meal-item-footer {
+        .full-width();
+        background: transparent;
+
+        .details {
+            .full-width();
+            .flex-row(space-between);
+
+            .detail-item {
+                .flex-column();
+                text-align: center;
+
+                .amount {
+                    .font-size(18);
+                    display: block;
+                    line-height: 20px;
+                    font-family: @font-text;
+                    color: @text-color-primary-light;
+                }
+
+                .label {
+                    .font-size(14);
+                    display: block;
+                    line-height: 15px;
+                    font-family: @font-text;
+                    color: @text-color-primary-light;
+                }
+            }
+        }
+
+        .footer-btns {
+            .full-width();
+            margin-top: @baseline;
+            .flex-row();
+
+            .btn-primary {
+                margin-right: @bl;
+            }
+        }
+    }
+}

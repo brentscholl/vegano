@@ -1,0 +1,144 @@
+/***********************************************************************/
+/* CONTENT
+/*
+/* Main content styles. Call to actions, Banners, Breadcrumbs etc
+/***********************************************************************/
+
+/** STYLE **/
+.word-break {
+    word-break: break-all;
+}
+
+.background-color {
+    background-color: @background-color;
+}
+
+.margin-top {
+    margin-top: @baseline;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-icon-right {
+    i, svg {
+        margin-left: @baseline*0.5;
+    }
+}
+
+.btn-icon-left {
+    i, svg {
+        margin-right: @baseline*0.5;
+    }
+}
+
+.box-shadow-secondary {.box-shadow-secondary();}
+
+/* FLASH ALERTS */
+.flash-alert {
+    position: fixed;
+    z-index: 9999;
+    bottom: @baseline;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    .box-shadow();
+}
+
+.alert:not(.message-container) {
+    position: fixed;
+    z-index: 9999;
+    bottom: @baseline;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    .box-shadow();
+}
+
+/* MODAL */
+.modal {
+    align-items: center;
+    //background: -moz-radial-gradient(center 20%, ellipse cover, rgba(132, 134, 133, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    //background: -webkit-radial-gradient(center 20%, ellipse cover, rgba(132, 134, 133, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    //background: radial-gradient(ellipse at center 20%, rgba(132, 134, 133, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#801d5086', endColorstr='#80000000',GradientType=1);
+    background: fade(#aaa, 10%);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    margin-top: @baseline*6;
+    color: @text-color-primary-dark;
+    .border-radius(15px);
+    border: none;
+    .box-shadow-secondary();
+    background: fade(@white, 90%);
+    backdrop-filter: blur(10px);
+
+    .modal-header {
+        justify-content: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .close {
+            padding: 20px;
+            margin: -20px -20px -20px -20px;
+            position: absolute;
+            right: 20px;
+        }
+
+        h4 {
+            width: 100%;
+            text-align: center;
+            padding: 0px 20px;
+        }
+    }
+}
+
+.modal-backdrop {
+    z-index: 999;
+    opacity: 0;
+    background: transparent;
+}
+
+.last-section-background-circle {
+    overflow: hidden;
+    position: relative;
+    min-height: 35vw;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: -48vw;
+        left: -20vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 140vw;
+        height: 70vw;
+        border-top-left-radius: 70vw;
+        border-top-right-radius: 70vw;
+        background-color: @secondary-color-light;
+        display: block;
+    }
+}
+
+.standard-full-splash {
+    .full-page();
+    .splash-padding();
+}
+
+// IMPORTS =============================================================================================================
+// Components
+@import "content/rotating-slider";
+@import "content/featured-meal-item";
+@import "content/box-modal";
+
+// Pages
+@import "content/landing";
+@import "content/home";
+@import "content/login";
+@import "content/meals";
+@import "content/user-dashboard";
+@import "content/terms";
+

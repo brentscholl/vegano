@@ -1,0 +1,329 @@
+/***********************************************************************/
+/*********** LANDING PAGE **********************************************/
+/***********************************************************************/
+
+#landing-splash {
+    .full-page();
+    position: relative;
+    .splash-padding-center();
+    .flex-column();
+
+    .landing-slider-container {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1080px;
+        width: 100%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        right: 0;
+        height: 2000px;
+        width: 1000px;
+        border-top-left-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+        background-color: @secondary-color-light;
+        display: block;
+    }
+}
+
+#landing-featured-bowls-title {}
+
+#landing-featured-bowls {
+    .full-width();
+    .section-padding();
+
+    .featured-meal-col:nth-of-type(2) {
+        margin-top: -200px;
+    }
+
+    .featured-meal-col:nth-of-type(3) {
+        margin-top: -400px;
+    }
+}
+
+#landing-how-we-work {
+    .full-width();
+    .section-padding();
+
+    .nav-col {
+        padding-right: 0px;
+    }
+
+    .content-col {
+        padding-left: 0px;
+    }
+
+    .nav {
+        margin-top: @bl*7.5;
+
+        .nav-link {
+            padding: @bl*1.5;
+            .flex-row(flex-start);
+            align-items: center;
+            position: relative;
+            .transition();
+            .border-radius(0px);
+
+            .step {
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                margin-top: -30px;
+                width: 60px;
+                height: 60px;
+                .border-radius(30px);
+                background: @secondary-color-light;
+                color: @white;
+                text-align: center;
+                .flex-column();
+                .font-size(24);
+                line-height: 20px;
+                font-family: @font-heading-bold;
+                .transition();
+
+                span {
+                    display: block;
+                    .font-size(11);
+                    text-transform: uppercase;
+                    line-height: 12px;
+                    margin-bottom: 0px;
+                    font-family: @font-text;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+            .step-icon {
+                margin-right: @bl*2;
+                width: 120px;
+                height: auto;
+                text-align: right;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    max-height: @bl*2;
+                    max-width: @bl*3;
+                }
+            }
+
+            .step-description {
+                .flex-column();
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+
+            &.active {
+                background-color: @secondary-color-light;
+
+                h4 {
+                    color: @text-color-primary-dark
+                }
+
+                .step {
+                    background: @secondary-color;
+                }
+            }
+        }
+    }
+
+    .how-we-work-nav-footer {
+        margin-top: @bl*2;
+
+        h4 {
+            color: @secondary-color;
+            text-transform: none;
+            margin-bottom: @bl*2;
+        }
+    }
+
+    .tab-content {
+        .border-radius(10px);
+        background: @white;
+        .box-shadow();
+        padding: @bl*2;
+        height: @bl*30;
+        .flex-column();
+
+        .featured-meal-item-container {
+            height: auto;
+            width: auto;
+            max-width: 400px;
+            margin-right: auto;
+            margin-left: auto;
+
+            img {
+                display: block;
+                width: 240px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        img {
+            width: auto;
+            height: 520px;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+#landing-shout {
+    .section-padding();
+    .full-width();
+
+    .mission {
+        text-align: center;
+        padding: @bl*4 0;
+        position: relative;
+        z-index: 998;
+    }
+
+    .scroll-text-container {
+        .flex-row();
+        font-family: @font-heading-light;
+        .font-size(70);
+        line-height: 80px;
+        color: @text-color-primary-dark;
+
+        .hundred {
+            margin-right: @bl*2;
+            z-index: 998;
+        }
+
+        .scroll-text {
+            display: block;
+            position: relative;
+            width: 260px;
+        }
+    }
+
+    .scroll-text span {
+        position: absolute;
+        top: -80px;
+        width: 100%;
+        opacity: 0;
+        //overflow: hidden;
+        white-space: nowrap;
+        color: @text-color-primary-dark;
+        //animation: rotateWord 16s linear infinite 0s;
+    }
+
+    .scroll-text span {
+        animation: cycle 12s ease-out infinite;
+        animation-delay: 0s;
+    }
+
+    .scroll-text span:nth-of-type(2) {
+        animation: cycle 12s ease-out infinite;
+        animation-delay: 3s;
+
+    }
+
+    .scroll-text span:nth-of-type(3) {
+        animation: cycle 12s ease-out infinite;
+        animation-delay: 6s;
+    }
+
+    .scroll-text span:nth-of-type(4) {
+        animation: cycle 12s ease-out infinite;
+        animation-delay: 9s;
+    }
+
+    /* ANIMATION */
+
+    @keyframes cycle {
+        0% { top: -80px; opacity: 0}
+        //move
+        5% { top: 0px; opacity: 1}
+        //pause
+        20% { top: 0px; opacity: 1; z-index: 20; }
+        //move
+        25% { top: 80px; opacity: 0; z-index: 20; }
+        // pause
+        40% { top: 80px; opacity: 0; z-index: -1; }
+        //move
+        45% { top: 160px; opacity: 0; z-index: 20; }
+        60% { top: -80px; opacity: 0; }
+        85% { top: -160px; opacity: 0; }
+        100% { top: -80px; opacity: 0; }
+    }
+}
+
+#landing-about {
+    .section-padding();
+    .full-width();
+    position: relative;
+    overflow: hidden;
+
+    .about-item-container {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        padding: 0px;
+        width: 300px;
+        height: 300px;
+        .border-radius(50%);
+        overflow: hidden;
+        display: block;
+        .transition();
+
+        &:hover {
+            .box-shadow();
+            transform: scale(1.05);
+        }
+
+        .overlay {
+            background-color: fade(@primary-color-dark, 20%);
+            width: 300px;
+            height: 300px;
+            .border-radius(50%);
+            .flex-column();
+            text-align: center;
+        }
+
+        .about-item-icon {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto @bl auto;
+
+            img {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .about-item-title {
+            font-family: @font-heading-bold;
+            .font-size(20);
+            color: @white;
+            line-height: 20px;
+        }
+    }
+
+    #meet-our-chefs {
+        background-image: url('/images/assets/vegan-meal-deliver_meet-our-chefs.png');
+    }
+
+    #sustainability {
+        background-image: url('/images/assets/vegan-meal-deliver_sustainability.png');
+        margin-top: @bl*4;
+    }
+
+    #our-community {
+        background-image: url('/images/assets/vegan-meal-deliver_our-community.png');
+    }
+}

@@ -1,0 +1,26 @@
+.alert {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.modal,
+.vm--overlay {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.2);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+.nav-pills.order-status-list .nav-link:hover {
+  background: #eee;
+}
+.nav-pills.order-status-list .nav-link.active {
+  background-color: #0041ff;
+}

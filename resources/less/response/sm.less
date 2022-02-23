@@ -1,0 +1,106 @@
+// ========================================================================================
+// ---------------- MOBILE TABLET ---------------------------------------------------------
+// ========================================================================================
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 767.98px) {
+
+    // STYLES -------------------------------------------------------------------------------
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .sm-hide {
+        display: none;
+    }
+
+    .mobile-text-left {
+        text-align: left !important;
+    }
+
+    .mobile-text-center {
+        text-align: center !important;
+    }
+
+    .mobile-text-right {
+        text-align: right !important;
+    }
+
+    .btn-icon-left {
+        i, svg {
+            margin-right: 8px;
+        }
+    }
+
+    .btn-icon-right {
+        i, svg {
+            margin-left: 8px;
+        }
+    }
+
+    // NAV -------------------------------------------------------------------------------
+    .main-nav.header-primary .nav-container {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-nav.header-primary .nav-container .nav-brand {
+        text-align: center;
+        flex-grow: unset;
+        margin: unset;
+    }
+
+    // UI --------------------------------------------------------------------------------
+    // TYPOGRAPHY ------------------------------------------------------------------------
+    // FOOTER ----------------------------------------------------------------------------
+    footer .footer-lower .stealth-logo-col {
+        text-align: center;
+        margin-top: @bl;
+
+        img {
+            height: 10px;
+        }
+    }
+
+    footer .footer-upper .social-list {
+        justify-content: center;
+        margin-top: @bl*3;
+    }
+
+    // PAGE CONTENT ======================================================================
+    // REGISTRATION ----------------------------------------------------------------------
+    // HOME ------------------------------------------------------------------------------
+    #landing-splash:before {
+        height: 1000px;
+        width: 500px;
+    }
+
+    .featured-meal-item-container {
+        margin-bottom: @bl*2;
+    }
+
+    #landing-how-we-work .nav {
+        margin-top: 0px;
+    }
+
+    // PAGES =============================================================================
+    // Single Meal
+    #meal-splash img {
+        height: 450px;
+        margin-top: 60px;
+    }
+
+    .prep-time-table {
+        margin-top: @bl*3;
+    }
+}
+
+// end of SM

@@ -1,0 +1,156 @@
+/***********************************************************************/
+/* TYPOGRAPHY
+/*
+/* Styles for <h1>-<h6>, <p> , <hr> etc
+/***********************************************************************/
+
+body {
+    color: @text-color-primary-dark;
+
+    font-family: @font-text;
+}
+
+/***********************************************************************/
+/********** Headings ***************************************************/
+/***********************************************************************/
+.title, .heading {
+}
+
+h1, .h1 {
+    .font-size(45px);
+    line-height: @baseline*2.5;
+    font-family: @font-heading;
+    color: @primary-color-dark;
+    margin-bottom: @baseline;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+    .font-size(20px);
+    line-height: @baseline*1.5;
+    font-family: @font-heading-bold;
+    color: @primary-color;
+    margin-bottom: @baseline;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+h4, .h4 {
+    .font-size(18px);
+    line-height: @baseline;
+    font-family: @font-heading-bold;
+    color: @text-color-primary-dark;
+    margin-bottom: @bl*0.5;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+h5, .h5 {
+    .font-size(18px);
+    line-height: @baseline;
+    font-family: @font-text;
+    color: @text-color-primary-dark;
+    margin-bottom: @bl*0.5;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+h6, .h6 {
+
+}
+
+/***********************************************************************/
+/*********** Paragraphs and Text Effects *******************************/
+/***********************************************************************/
+p, .p {
+    .font-size(18px);
+    line-height: @baseline;
+    font-family: @font-text;
+    color: @primary-color-dark;
+    margin-bottom: @baseline;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+i, em {
+
+}
+
+b, strong {
+
+}
+
+small {
+
+}
+
+sup, sub {
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/***********************************************************************/
+/*********** Links *****************************************************/
+/***********************************************************************/
+a, a:visited {
+    color: @accent-color;
+}
+
+a:hover, a:focus, a:active {
+    color: @secondary-color;
+    text-decoration: none;
+}
+
+/***********************************************************************/
+/********** Lines & Boxes **********************************************/
+/***********************************************************************/
+hr {
+    width: @baseline*3;
+    height: 4px;
+    background-color: @primary-color;
+    border: none;
+    margin: @baseline auto;
+}
+
+/***********************************************************************/
+/********** Default Blockquote Styles **********************************/
+/***********************************************************************/
+blockquote {
+
+    p {
+
+    }
+
+    cite {
+
+        &::before {
+
+        }
+    }
+}
+
+/***********************************************************************/
+/***********************************************************************/
+/***********************************************************************/
+ol, ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.success {
+    color: @success-color;
+}
+
+.danger {
+    color: @red-dark;
+}
+

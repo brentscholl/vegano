@@ -1,0 +1,145 @@
+/***********************************************************************/
+/* VARIABLES
+/*
+/* Less Variables
+/***********************************************************************/
+
+/***********************************************************************/
+/*==== SITE COLORS ====================================================*/
+/***********************************************************************/
+/* Primary Color */
+@primary-color: #2b2e34;
+@primary-color-dark: #000000;
+@primary-color-light: #85868a;
+
+/* Secondary Color */
+@secondary-color: #122e34;
+@secondary-color-dark: #DCE6E0;
+@secondary-color-light: #ebeeef;
+
+@accent-color: #90a169;
+
+/* Success Color */
+@success-color: #60C153;
+
+/* Gradient Color */
+@gradient-color-dark: #1d5086;
+@gradient-color-light: #00b0b2;
+
+/* Text Color */
+@text-color-primary-dark: #000000;
+@text-color-secondary-dark: #000000;
+@text-color-primary-light: #91A499;
+@text-color-secondary-light: #91A499;
+
+/*Input Colors */
+@input-bg-color-dark: rgba(57, 73, 105, 0.95);
+//@input-bg-color-dark:   #2f3c56;
+@input-bg-color-light: rbga(207, 215, 219, 0.37);
+@input-placeholder-color-dark: fade(@text-color-primary-dark, 30%);
+
+/*Icon Colors*/
+@icon-color-light: #9fadb9;
+@icon-color-dark: #88898b;
+
+/* Background Color (For page. Typically white or grey) */
+@background-color: #f7f7f7;
+@background-color-secondary: #E9DCC3;
+@background-color-dark: #e2e4e7;
+@background-color-light: #fefefe;
+
+/* Overlay Color (typically used for image overlays) */
+@overlay-color: rgba(53, 129, 204, 0.3);
+@overlay-color-dark: rgba(34, 45, 64, 0.3);
+
+/* Primary Shades (typically for fonts) */
+@light-color: #00b1b3; // Fonts on a dark background
+@light-color-secondary: #e8b9de; // Fonts on a dark background
+@dark-color: #2e3039; // Fonts on a light background
+@dark-color-secondary: #7d8793; // Fonts on a light background **
+@red-light: #ed6c63;
+@red-dark: #902038;
+@facebook-color: #3d5998;
+@google-color: #4285f4;
+
+@yellow: #FFEE58;
+
+/* Body Color (default text color) */
+@body-color: #818181;
+
+/* Link color <a> */
+@link-color: #478cd0;
+@link-hover-color: darken(@link-color, 10%);
+
+@white: #ffffff;
+
+@finish-color: #28a745;
+@border-color: #d7d7d7;
+/***********************************************************************/
+/*==== TYPOGRAPHY =====================================================*/
+/***********************************************************************/
+@font-face {
+    font-family: 'Gotham Book';
+    src: url(../../public/css/fonts/GothamBook.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url(../../public/css/fonts/GothamMedium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url(../../public/css/fonts/GothamBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url(../../public/css/fonts/GothamLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham Thin';
+    src: url(../../public/css/fonts/Gotham-Thin.otf) format('opentype');
+}
+
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url(fonts/Roboto-Light.ttf) format('truetype');
+//}
+//@font-face {
+//  font-family: 'Roboto-bold';
+//  src: url(fonts/Roboto-Bold.ttf) format('truetype');
+//}
+
+/* Font families */
+
+@font-heading: 'Gotham Light', sans-serif;
+@font-heading-bold: 'Gotham Bold', sans-serif;
+@font-heading-light: 'Gotham Thin', sans-serif;
+@font-text: 'mrs-eaves', serif;
+@font-text-bold: 'mrs-eaves', serif;
+@font-nav: 'Gotham Medium', sans-serif;
+@font-btn: 'Gotham Bold', sans-serif;
+@font-awesome: 'Font Awesome 5 Free';
+
+/* Font Weights */
+@font-thin: 400;
+@font-normal: 500;
+@font-bold: 700;
+
+/***********************************************************************/
+/*==== PAGE MEASUREMENTS ==============================================*/
+/***********************************************************************/
+@base-width: 1140px;
+@base-gutter: 3%;
+@base-margin: 12px;
+
+@baseline: 20px;
+@bl: @baseline;
+
+@header-height: @baseline*4;
+@header-height-secondary: @baseline*2.5;
+@experience-thumb-width: 340px;
+
+@easing: all 0.2s ease-in-out;

@@ -1,0 +1,102 @@
+#login-splash {
+    .splash-padding();
+    .full-width();
+    position: relative;
+
+    .card {
+        border: none;
+        .box-shadow();
+        .border-radius();
+        padding: @bl*2;
+
+        .card-header {
+            text-align: center;
+            background: @white;
+            border: 0px;
+        }
+
+        .card-footer {
+            background: @white;
+            padding-top: @bl*2;
+            margin-top: @bl;
+            text-align: center;
+        }
+    }
+
+    .forgot-pass-col {
+        text-align: right;
+    }
+}
+
+#sign-up-billing {
+    display: none;
+}
+
+.sign-up-plan-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    .box-shadow();
+    .border-radius();
+    padding: 0px;
+    font-family: @font-text;
+
+    .price {
+        color: @secondary-color;
+        font-family: @font-heading-bold;
+        text-transform: uppercase;
+        .font-size(18);
+
+        small {
+            .font-size(9);
+        }
+    }
+
+    h4 {
+        margin-bottom: 0px;
+    }
+
+    .card-header {
+        background: @secondary-color-light;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom: none;
+        text-align: center;
+        padding: @bl*2;
+    }
+
+    .plan-description-container {
+        padding: @baseline*2 0;
+        border-bottom: 1px solid @border-color;
+    }
+
+    .plan-pricing-container {
+        padding: @baseline*2 0;
+        border-bottom: 1px solid @border-color;
+    }
+
+    .plan-total-container {
+        padding-top: @baseline*2;
+    }
+
+    .discount-button {
+        height: calc(2.25rem + 2px);
+        line-height: calc(2.25rem + 2px);
+        border-radius: 6px;
+        background-color: transparent;
+        border: 1px solid #294725;
+        color: #294725;
+        padding: 0 20px;
+        box-shadow: none;
+    }
+}
+
+.week-discount-label {
+    color: @accent-color;
+    .font-size(24);
+    font-weight: @font-bold;
+}

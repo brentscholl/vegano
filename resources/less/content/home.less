@@ -1,0 +1,45 @@
+/***********************************************************************/
+/*********** HOME PAGE *************************************************/
+/***********************************************************************/
+
+#home-splash {
+    .full-page();
+    position: relative;
+    .splash-padding-center();
+    .flex-column();
+
+    .home-slider-container {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1080px;
+        width: 100%;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 20%;
+        right: 0;
+        height: 2000px;
+        width: 1000px;
+        border-top-left-radius: 1000px;
+        border-bottom-left-radius: 1000px;
+        background-color: @secondary-color-light;
+        display: block;
+    }
+}
+
+#home-featured-bowls {
+    .full-width();
+    padding: @baseline*4 0 0 0;
+
+    h2 {
+        margin-bottom: @baseline*3;
+    }
+
+    .featured-meal-item-container {
+        margin-bottom: @bl*4;
+    }
+}

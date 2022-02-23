@@ -1,0 +1,67 @@
+#my-account-splash {
+    .full-width();
+    .splash-padding();
+
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: @secondary-color-light;
+    }
+
+    .table {
+        border: none;
+        margin-bottom: @bl*4;
+
+        thead {
+            background: @secondary-color;
+            color: @white;
+            padding: 10px @bl;
+
+            .font-size(18);
+            line-height: @bl*1.5;
+            text-transform: none;
+            font-family: @font-heading-bold;
+            letter-spacing: 1px;
+
+        }
+
+        tbody {
+            tr {
+                padding: 0 @bl;
+                .font-size(14);
+                color: @primary-color;
+                font-family: @font-heading-bold;
+                letter-spacing: 1px;
+            }
+        }
+
+        .edit {
+            .btn-accent {
+                height: @baseline*1.5;
+                line-height: @baseline*1.5;
+                .font-size(13);
+                padding: 0 15px;
+
+                &:hover {
+                    color: @secondary-color;
+                    background: @white;
+                }
+            }
+        }
+    }
+
+    .destroy-buttons {
+        .full-width();
+        margin-top: @bl*4;
+        text-align: center;
+
+        .btn-link {
+            color: @accent-color;
+            font-family: @font-heading-bold;
+            .font-size(14);
+            font-weight: normal;
+
+            &:hover {
+                color: @secondary-color;
+            }
+        }
+    }
+}

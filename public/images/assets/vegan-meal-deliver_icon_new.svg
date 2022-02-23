@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="123" height="123" viewBox="0 0 123 123">
+  <defs>
+    <filter id="Ellipse_70" x="15.5" y="19.5" width="92" height="92" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="vegan-meal-deliver_icon_new" transform="translate(-1259 -688)">
+    <circle id="Ellipse_67" data-name="Ellipse 67" cx="56.5" cy="56.5" r="56.5" transform="translate(1264 693)" fill="#be3a56" opacity="0.5"/>
+    <g id="Ellipse_69" data-name="Ellipse 69" transform="translate(1259 688)" fill="none" stroke="#fff" stroke-width="17" stroke-dasharray="1 8">
+      <circle cx="61.5" cy="61.5" r="61.5" stroke="none"/>
+      <circle cx="61.5" cy="61.5" r="53" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1259, 688)" filter="url(#Ellipse_70)">
+      <circle id="Ellipse_70-2" data-name="Ellipse 70" cx="38.5" cy="38.5" r="38.5" transform="translate(23 23)" fill="#be3a56"/>
+    </g>
+    <text id="NEW_" data-name="NEW!" transform="translate(1284 736)" fill="#fff" font-size="20" font-family="SFUIDisplay-Semibold, SF UI Display" font-weight="600"><tspan x="11.271" y="19">NEW!</tspan></text>
+  </g>
+</svg>

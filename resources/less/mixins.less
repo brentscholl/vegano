@@ -1,0 +1,196 @@
+/************************************************************************
+== QUICK STYLES =========================================================
+************************************************************************/
+.font-heading() {font-family: @font-heading;}
+
+.font-text() {font-family: @font-text;}
+
+.font-btn() {font-family: @font-btn;}
+
+.font-bold() {font-weight: @font-bold;}
+
+.font-normal() {font-weight: @font-normal;}
+
+.font-thin() {font-weight: @font-thin;}
+
+.text-center() {text-align: center;}
+
+.text-left() {text-align: left;}
+
+.text-right() {text-align: right;}
+
+.text-uppercase() {text-transform: uppercase;}
+
+.text-normal() {text-transform: none;}
+
+/************************************************************************
+== MIXINS ===============================================================
+************************************************************************/
+/* Appearance (removes default style put on elements by browsers) */
+.appearance (@appearance: none) {
+    -webkit-appearance: @appearance;
+    -moz-appearance: @appearance;
+}
+
+/* Adapt Pixel Font Sizes To ems */
+.font-size(@font-size: 16) {
+    font-size: @font-size * 1px;
+}
+
+/* CSS Transitions effects. Apply to elements that change on hover, scroll, etc */
+.transition(@duration: 300ms, @property: all) {
+    -webkit-transition: @property @duration ease-in-out;
+    -moz-transition: @property @duration ease-in-out;
+    -ms-transition: @property @duration ease-in-out;
+    -o-transition: @property @duration ease-in-out;
+    transition: @property @duration ease-in-out;
+}
+
+/* Apply a box shadow to an element */
+.box-shadow(@distance: 2px, @blur: 20px, @opacity: 0.26) {
+    -webkit-box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+    -moz-box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+    box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+}
+
+.box-shadow-secondary(@distance: 2px, @blur: 10px, @opacity: 0.15) {
+    -webkit-box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+    -moz-box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+    box-shadow: 0px @distance @blur -2px rgba(0, 0, 0, @opacity);
+}
+
+.box-shadow-gradient(@distance: 20px, @blur: 20px, @opacity: 0.11) {
+    -webkit-box-shadow: 0px @distance @blur -8px rgba(80, 78, 78, @opacity);
+    -moz-box-shadow: 0px @distance @blur -8px rgba(80, 78, 78, @opacity);
+    box-shadow: 0px @distance @blur -8px rgba(80, 78, 78, @opacity);
+}
+
+.well-shadow(@distance: 5px, @blur: 5px, @opacity: 0.2) {
+    -webkit-box-shadow: inset 0px @distance @blur 0px rgba(0, 0, 0, @opacity);
+    -moz-box-shadow: inset 0px @distance @blur 0px rgba(0, 0, 0, @opacity);
+    box-shadow: inset 0px @distance @blur 0px rgba(0, 0, 0, @opacity);
+}
+
+/* Add padding to Top and Bottom of page sections */
+.section-padding() {
+    padding: @baseline*4 0;
+}
+
+.splash-padding() {
+    padding: @baseline*10 0 @baseline*4 0;
+}
+
+.splash-padding-center() {
+    padding: @baseline*9 0 @baseline*9 0;
+}
+
+.full-width() {
+    width: 100%;
+    height: auto;
+}
+
+.full-page() {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.overlay() {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-light() {
+    background: rgba(160, 183, 200, 0.5);
+}
+
+.overlay-secondary(@opacity: 0.3) {
+    background: rgb(86, 63, 79);
+    background: -moz-linear-gradient(top, rgba(86, 63, 79, @opacity) 1%, rgba(86, 63, 79, @opacity) 100%);
+    background: -webkit-linear-gradient(top, rgba(86, 63, 79, @opacity) 1%, rgba(86, 63, 79, @opacity) 100%);
+    background: linear-gradient(to bottom, rgba(86, 63, 79, @opacity) 1%, rgba(86, 63, 79, @opacity) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563f4f', endColorstr='#4563f4f', GradientType=0);
+
+}
+
+.text-shadow() {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-highlight() {
+    text-shadow: 0 0 3px #FFFFFF;;
+}
+
+.border-radius(@radius: 6px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.gradient() {
+    background: rgb(29, 80, 134);
+    background: -moz-linear-gradient(-25deg, rgba(29, 80, 134, 1) 0%, rgba(0, 176, 178, 1) 100%);
+    background: -webkit-linear-gradient(-25deg, rgba(29, 80, 134, 1) 0%, rgba(0, 176, 178, 1) 100%);
+    background: linear-gradient(155deg, rgba(29, 80, 134, 1) 0%, rgba(0, 176, 178, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d5086', endColorstr='#00b0b2', GradientType=1);
+}
+
+.gradient-inverse() {
+    background: rgb(0, 176, 178);
+    background: -moz-linear-gradient(-25deg, rgba(0, 176, 178, 1) 0%, rgba(29, 80, 134, 1) 100%);
+    background: -webkit-linear-gradient(-25deg, rgba(0, 176, 178, 1) 0%, rgba(29, 80, 134, 1) 100%);
+    background: linear-gradient(155deg, rgba(0, 176, 178, 1) 0%, rgba(29, 80, 134, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00b0b2', endColorstr='#1d5086', GradientType=1);
+}
+
+.bottom-gradient() {
+    background: -moz-linear-gradient(top, rgba(0, 176, 178, 0) 1%, rgba(0, 175, 178, 0.15) 10%, rgba(11, 139, 161, 0.85) 35%, rgba(29, 80, 134, 0.97) 89%, rgba(29, 80, 134, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 176, 178, 0) 1%, rgba(0, 175, 178, 0.15) 10%, rgba(11, 139, 161, 0.85) 35%, rgba(29, 80, 134, 0.97) 89%, rgba(29, 80, 134, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 176, 178, 0) 1%, rgba(0, 175, 178, 0.15) 10%, rgba(11, 139, 161, 0.85) 35%, rgba(29, 80, 134, 0.97) 89%, rgba(29, 80, 134, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0000b0b2', endColorstr='#1d5086',GradientType=0);
+}
+
+.background-gradient() {
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(247, 247, 247, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#ffffff', GradientType=0);
+}
+
+.background-gradient-inverse() {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0);
+}
+
+.pattern() {
+    background-image: url('/images/funky-lines-2.png');
+    background-repeat: repeat;
+}
+
+/* Flex shorthand */
+.flex-row(@justify: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: @justify;
+}
+
+.flex-row-reverse(@justify: center) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: @justify;
+}
+
+.flex-column(@justify: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: @justify;
+}
+
+.flex-column-reverse(@justify: center) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: @justify;
+}
