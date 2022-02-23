@@ -41,7 +41,6 @@
                     </div>
                 </div>
                 <div class="col-md-2 stealth-logo-col">
-                    <a href="#" title="Stealth Media"><img class="footer-stealth" src="{{ asset("/images/assets/vegan-meal-deliver_STEALTH-logo.svg") }}" alt="Stealth Media Logo"></a>
                 </div>
             </div>
         </div>

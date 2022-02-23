@@ -44,7 +44,7 @@ class CreateAdminCommand extends Command
         $user = User::create([
             'first_name' => 'Brent',
             'last_name' => 'Scholl',
-            'email' => 'brent@stealthmedia.com',
+            'email' => 'admin@vegano.com',
             'password' => Hash::make(env('ADMIN_PASSWORD'))
         ]);
 
