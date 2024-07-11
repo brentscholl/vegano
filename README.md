@@ -1,6 +1,6 @@
 # Vegano Meal Kit Platform
 
-<small>* Please note: Project was extremely rushed with a 3 month deadline and no UX or wireframe design. Thus code is not optimize, testing does not exit.</small>
+<small>* Please note: Project was extremely rushed with a 3 month deadline and no UX or wireframe design. Thus code is not optimize, testing does not exist.</small>
 
 ## Getting Started
 1. Run `php artisan migrate --seed`
